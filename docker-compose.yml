@@ -1,0 +1,10 @@
+services:
+  node:
+    container_name: node_container
+    build:
+      context: .
+      dockerfile: ./Docker/node/Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 8080:3000
